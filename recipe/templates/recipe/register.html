@@ -1,0 +1,11 @@
+<h1>Register Here</h1>
+<form action="/recipe/save/" method="post">
+    {% csrf_token %}
+username:<input type="text" name="username"><br>
+email:<input type="text" name="email"><br>
+password:<input type="password" name="password"><br>
+
+<input type="submit" value="Register"><br>
+    </form>
+
+<a href="/recipe/">Login</a>

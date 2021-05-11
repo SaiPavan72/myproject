@@ -1,0 +1,15 @@
+<h1>Create Recipe</h1>
+
+<form action="/recipe/save_recipe/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    image <input type="file" name="image"><br>
+
+
+    name: <input type="text" name="name"><br>
+    Ingredients: <input type="text" name="ingredients"><br>
+    process: <input type="text" name="process"><br>
+
+    <input type="submit" value="Create">
+</form>
+
+<a href="/recipe/logout_page/">Logout</a>

@@ -1,0 +1,13 @@
+<marquee><h1>RECIPE MENU</h1></marquee>
+<body bgcolor="full skyblue">
+<ul>
+{% for each in recipe %}
+    <a href="/recipe/{{each.id}}/">{{each.recipe_name}}</a>  <a href="/recipe/delete_recipe/{{each.id}}/">delete</a> <br>
+{% endfor %}
+</ul>
+<br>
+<a href="/recipe/create_recipe/">create own recipe</a><br>
+</body>
+<h5>createdby:{{user.username}}</h5>
+
+<a href="/recipe/logout/">Logout</a>
